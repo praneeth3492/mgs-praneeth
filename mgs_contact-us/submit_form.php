@@ -1,15 +1,21 @@
 <?php
 
+// Check if mandatory fields are set
+if (!isset($_POST['academic_year']) || !isset($_POST['student_name'])) {
+    echo json_encode(['status' => 'error', 'message' => 'Mandatory fields are missing']);
+    exit;
+}
+
 // Capture form data from the incoming request
 $academic_year = $_POST['academic_year'];
 $student_name = $_POST['student_name'];
-$student_last_name = $_POST['student_last_name'];
-$gender = $_POST['gender'];
-$parent_name = $_POST['parent_name'];
-$mobile_number = $_POST['mobile_number'];
-$email = $_POST['email'];
-$class_id = $_POST['class_id'];
-$message = $_POST['message'];
+$student_last_name = $_POST['student_last_name'] ?? NULL;
+$gender = $_POST['gender'] ?? NULL;
+$parent_name = $_POST['parent_name'] ?? NULL;
+$mobile_number = $_POST['mobile_number'] ?? NULL;
+$email = $_POST['email'] ?? NULL;
+$class_id = $_POST['class_id'] ?? NULL;
+$message = $_POST['message'] ?? NULL;
 $source = $_POST['source'];
 $api_key = "1fEkQiYkD7Fqyrid06BFXccK1QdiIaXh";
 
@@ -52,7 +58,6 @@ if (curl_errno($curl)) {
     echo json_encode(['status' => 'error', 'message' => $error_msg]);
     exit;
 }
-
 
 curl_close($curl);
 echo $response;

@@ -7913,7 +7913,7 @@ ul.no-bullets li {
 /* Example media query for mobile devices */
 @media (max-width: 480px) {
   .logo {
-    width: 150px; /* Further adjusted width */
+    width: 250px; /* Further adjusted width */
     height: 50px; /* Further adjusted height */
   }
 }
@@ -7922,7 +7922,7 @@ ul.no-bullets li {
 .social-icon {
   width: 50px; /* Set the width */
   height: auto; /* Maintain aspect ratio */
-  margin-right: 10px; /* Add a gap to the right of each icon */
+  margin-right: 8px; /* Add a gap to the right of each icon */
   border: 1px solid white; /* Add a 2px wide white border */
   padding: 5px; /* Add a 5px gap between the image and the border */
 }
@@ -7960,11 +7960,19 @@ ul.no-bullets li {
 
 .admissions-button {
   padding: 10px 20px;
-  background-color: #007bff;
+  background-color: #a31a3e;
   color: #fff;
   text-decoration: none;
   border-radius: 5px;
+  font-weight: 600;
+  font-size: 20px;
 }
+
+.admissions-button:hover {
+  color:palegoldenrod; /* Replace with the color you want on hover */
+  font-style: bold; /* e.g. italic, normal, etc. */
+}
+
 
 /* Mobile view */
 @media screen and (max-width: 767px) {
