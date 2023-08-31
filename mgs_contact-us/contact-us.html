@@ -143,17 +143,17 @@
 
                                     <div class="col-md-6">
                                         <div class="form-group">
-                                            <input class="form-control" placeholder="First Name" type="text" name="name" id="name" required autocomplete="off">
+                                            <input class="form-control" placeholder="First Name*" type="text" name="name" id="name" required autocomplete="off">
                                         </div>
                                     </div>
                                     <div class="col-md-6">
                                         <div class="form-group">
-                                            <input class="form-control" placeholder="Parent Name" type="text" name="parent_name" id="parent_name" required autocomplete="off">
+                                            <input class="form-control" placeholder="Parent Name*" type="text" name="parent_name" id="parent_name" required autocomplete="off">
                                         </div>
                                     </div>
                                     <div class="col-md-6">
                                         <div class="form-group">
-                                            <input class="form-control" placeholder="Mobile*" type="text" name="mobile" id="mobile" required autocomplete="off">
+                                            <input class="form-control" placeholder="Mobile*" type="number" name="mobile" id="mobile" required minlength="10" autocomplete="off" pattern="\d{10}" oninput="validateMobile(this)">
                                         </div>
                                     </div>
                                     <div class="col-md-6">
@@ -176,6 +176,7 @@
                                                     <option value="18">Grade-6</option>
                                                     <option value="19">Grade-7</option>
                                                     <option value="20">Grade-8</option>
+                                                    <option value="23">Grade-9</option>
                                                 </select>
                                             </div>
                                         </div>
@@ -183,7 +184,7 @@
                                     
                                     <div class="col-md-12">
                                         <div class="form-group">
-                                            <textarea class="form-control" placeholder="Message" name="message" id="message" required autocomplete="off" rows="4"></textarea>
+                                            <textarea class="form-control" placeholder="Message" name="message" id="message"  autocomplete="off" rows="4"></textarea>
                                        
                                         </div>
                                     </div>
@@ -399,7 +400,7 @@
     var source = "Website"; // Define the source variable here
 
     // Check if all fields are filled
-    if (!name || !mobile || !email || !parentName || !classId || !academicYear || !message) { // Added message to the validation
+    if (!name || !mobile || !email || !parentName || !classId || !academicYear ) { // Added message to the validation
         Swal.fire('Missing Fields!', 'Please make sure all fields are filled out.', 'warning');
         return;
     }

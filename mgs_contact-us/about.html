@@ -2,25 +2,29 @@
 <html lang="en">
 
 <head>
-       <!-- Google Tag Manager -->
+
+<!-- Google Tag Manager -->
 <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
     })(window,document,'script','dataLayer','GTM-PBRF3DCK');</script>
     <!-- End Google Tag Manager -->
+
+
     <!-- ========== Meta Tags ========== -->
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="Manchester Global School">
-
     <!-- ========== Page Title ========== -->
     <title>About us  | Manchester Global School</title>
-
     <!-- ========== Favicon Icon ========== -->
-    <link rel="shortcut icon" href="assets/img/favicon.png" type="image/x-icon">
+    <!-- cdn for lazy load images -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lazysizes/5.3.2/lazysizes.min.js" async=""></script>
 
+
+    <link rel="shortcut icon" href="assets/img/favicon.png" type="image/x-icon">
     <!-- ========== Start Stylesheet ========== -->
     <link href="assets/css/bootstrap.min.css" rel="stylesheet" />
     <link href="assets/css/font-awesome.min.css" rel="stylesheet" />
@@ -165,7 +169,10 @@
 
                     </div>
                     <div class="col-md-6 thumb">
-                        <img src="assets/img/about-us/building_entrance.webp" alt="Thumb">
+                    
+
+                        <img data-src="https://mgs.praneethkumar.co.in/assets/img/about-us/building_entrance.webp" class="lazyload" alt="About Us">
+
                     </div>
 
                 </div>

@@ -7,7 +7,7 @@
   z-index: 1042;
   overflow: hidden;
   position: fixed;
-  background: #0b0b0b;
+  background: #080808;
   opacity: 0.8; }
 
 .mfp-wrap {
@@ -269,7 +269,7 @@ img.mfp-img {
     box-shadow: 0 0 8px rgba(0, 0, 0, 0.6);
     background: #444; }
   .mfp-figure small {
-    color: #BDBDBD;
+    color: #bbbbbb;
     display: block;
     font-size: 12px;
     line-height: 14px; }
@@ -287,7 +287,7 @@ img.mfp-img {
 .mfp-title {
   text-align: left;
   line-height: 18px;
-  color: #F3F3F3;
+  color: #f1f1f1;
   word-wrap: break-word;
   padding-right: 36px; }
 
@@ -338,13 +338,13 @@ img.mfp-img {
 
 @media all and (max-width: 900px) {
   .mfp-arrow {
-    -webkit-transform: scale(0.75);
+: scale(0.75);
     transform: scale(0.75); }
   .mfp-arrow-left {
-    -webkit-transform-origin: 0;
+-origin: 0;
     transform-origin: 0; }
   .mfp-arrow-right {
-    -webkit-transform-origin: 100%;
+-origin: 100%;
     transform-origin: 100%; }
   .mfp-container {
     padding-left: 6px;

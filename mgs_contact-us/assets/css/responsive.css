@@ -400,7 +400,7 @@
   /* Login Register Form */
 
   form.white-popup-block .login-social {
-    border-bottom: 1px solid #e7e7e7;
+    border-bottom: 1px solid #e8e8e8;
     margin-bottom: 15px;
     overflow: hidden;
     padding-bottom: 15px;
@@ -860,7 +860,7 @@
   }
 
   .featured-courses-area .bottom-info .item {
-    border-bottom: 1px solid #e7e7e7;
+    border-bottom: 1px solid #e8e8e8;
     border-right: inherit;
     display: block;
     margin-bottom: 15px;
@@ -982,7 +982,7 @@
 
   /* Courses Details */
   .course-details-area .course-details-info .course-meta .item:first-child {
-    border-bottom: 1px dashed #999999;
+    border-bottom: 1px dashed #9a9a9a;
     margin-bottom: 15px;
     padding-bottom: 15px;
   }
@@ -992,7 +992,7 @@
     -moz-border-left-colors: none;
     -moz-border-right-colors: none;
     -moz-border-top-colors: none;
-    border-color: #999999;
+    border-color: #9a9a9a;
     border-image: none;
     border-style: none none dashed;
     border-width: medium medium 1px;
@@ -1269,7 +1269,7 @@
   /* Login Register Form */
 
   form.white-popup-block .login-social {
-    border-bottom: 1px solid #e7e7e7;
+    border-bottom: 1px solid #e8e8e8;
     margin-bottom: 15px;
     overflow: hidden;
     padding-bottom: 15px;

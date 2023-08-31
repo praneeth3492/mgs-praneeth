@@ -52,7 +52,7 @@
 #t-5:checked ~ .dots label[for="t-5"]{
 	transform: scale(2);
 	background-color: #fff;
-	box-shadow: 0px 0px 0px 3px #dddddd24;
+	box-shadow: 0px 0px 0px 3px #e0e0e024;
  
 }
 
